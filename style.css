@@ -1,52 +1,110 @@
+h1,
+h2,
+h5 {
+    text-align: center;
+    font-family: 'Digital-7 italic', sans-serif;
+    color: #a4f644;
+
+}
+
+
+h5 {
+    margin: 25px;
+
+}
+
+h5 {
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+    background-color: black;
+    height: 100vh;
 }
 
-h1 {
-  text-align: center;
-  margin-top: 30px;
-}
-
-h2 {
-  text-align: center;
-  margin-top: 10px;
-  color: #666;
-}
 
 .calculadora {
-  width: 314px;
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    border: 5px solid #fca311;
+    border-radius: 26px;
+    height: 560px;
+    width: 400px;
+    text-align: center;
+    background-color: rgba(19, 52, 90, 0.507);
+
+}
+
+.titulo {
+    text-align: center;
+    font-size: 20px;
+}
+
+.subtitulo {
+    font-size: 12px;
+    padding: 3px;
+    width: 380px;
+    margin: 3px;
+    text-align: start;
+    margin-bottom: 10px;
+    color: #6c6d66cc;
 }
 
 #pantalla {
-  width: 90%;
-  padding: 10px;
-  font-size: 20px;
-  margin-bottom: 10px;
-  text-align: right;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 80px;
+    border: 5px solid #f8d94c;
+    border-radius: 8px;
+    text-align: end;
+    font-size: 60px;
+    padding: 10px;
+    font-family: 'Digital-7 Mono', sans-serif;
+    outline: none;
+    background-color: rgb(173, 180, 204);
 }
 
 input[type="button"] {
-  width: 70px;
-  height: 40px;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  font-size: 16px;
-  background-color: #eee;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+    border: 3px solid #f8d94c;
+    border-radius: 5px;
+    color: #000000;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #aaa4d8;
+    font-family: sans-serif;
+
+
 }
 
 input[type="button"]:hover {
-  background-color: #ddd;
+    transition: 0.2s;
+    background-color: #dadd35;
 }
 
-input[type="button"]:last-child {
-  margin-right: 0;
+.contenedorTeclas {
+    margin: auto;
+    height: 280px;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.flexChildren {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+}
+
+.borrar {
+    font-size: 20px !important;
 }

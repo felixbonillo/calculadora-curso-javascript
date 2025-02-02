@@ -1,12 +1,11 @@
-## Link al curso completo de Javascript en Youtube:
-[VIDEO CURSO GRATIS COMPLETO: JavaScript Desde Cero por Sergie Code](https://youtu.be/N8Xt5rP_DUo)
+Hola bienvenido al repositorio :D
 
 
-# Tutorial de Calculadora en JavaScript
+Actualmente me encuentro realizando un curso de ##Javascript con Sergie code y uno de sus proyectos era realizar una calculadora, esta fue mejorada en cuando a estilos y funcionalidad.
 
-Link para ver resultado: [CALCULADORA TRABAJO TERMINADO](https://calculadora-tutorial-js.netlify.app/)
+Utiliza FLEXBOX para organizar los diferentes elementos de la calculadora junto a NoWrap para que no se rompa la calculadora, esta funcionando, quizas le anada mas funciones en un futuro, espero te guste :D
 
-Este es un tutorial que te guiará a través del proceso de creación de una calculadora utilizando JavaScript. El código HTML y CSS necesario para la interfaz de la calculadora estará disponible en el repositorio, por lo que nos centraremos en explicar el funcionamiento del código JavaScript a continuación.
+
 
 ## Funciones Principales
 
@@ -38,10 +37,18 @@ La función `limpiarPantalla()` se utiliza para borrar el contenido de la pantal
         document.getElementById('pantalla').value = '';
     }
 
-## Integración con HTML y CSS
 
-Para utilizar estas funciones, asegúrate de tener un elemento HTML con el id "pantalla" que represente la pantalla de la calculadora. Puedes ver el código HTML y CSS correspondiente en los archivos proporcionados en el repositorio.
+### `Del()`
 
-Recuerda que puedes personalizar la interfaz y agregar más funcionalidades según tus necesidades.
+La funcion `Del()` se utiliza para borrar el ultimo caracter pulsado en pantalla sin necesidad de borrar todo el contenido escrito. Simplemente evalua la cantidad de caracteres del string y le resta 1.
 
-¡Ahora estás listo para crear tu propia calculadora en JavaScript! Sigue este tutorial y diviértete explorando el mundo de la programación web.
+    function del() {
+        let numero = document.getElementById("pantalla").value;
+        let nuevoNumero = numero.substring(0, numero.length - 1);
+        pantalla.value = nuevoNumero;
+    }
+
+![Screenshot de la calculadora funcionando](<Screenshot (1)-1.png>)
+
+
+![Screenshot de la calculadora](Screenshot-1.png)

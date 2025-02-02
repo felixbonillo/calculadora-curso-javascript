@@ -1,44 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/digital-7-mono"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/rabbid-highway-sign-caps-narrow"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-    <h1>Calculadora Curso Javascript</h1>
-    <h2>Por Sergie Code</h2>
+  <body>
+    <h1>Calculadora Javascript</h1>
+    <h2>Por Felix Bonillo</h2>
     <div class="calculadora">
-        <input type="text" id="pantalla" readonly>
-        <br>
-        <input type="button" value="1" onclick="agregarALaPantalla('1')">
-        <input type="button" value="2" onclick="agregarALaPantalla('2')">
-        <input type="button" value="3" onclick="agregarALaPantalla('3')">
-        <input type="button" value="+" onclick="agregarALaPantalla('+')">
-        <br>
-        <input type="button" value="4" onclick="agregarALaPantalla('4')">
-        <input type="button" value="5" onclick="agregarALaPantalla('5')">
-        <input type="button" value="6" onclick="agregarALaPantalla('6')">
-        <input type="button" value="-" onclick="agregarALaPantalla('-')">
-        <br>
-        <input type="button" value="7" onclick="agregarALaPantalla('7')">
-        <input type="button" value="8" onclick="agregarALaPantalla('8')">
-        <input type="button" value="9" onclick="agregarALaPantalla('9')">
-        <input type="button" value="*" onclick="agregarALaPantalla('*')">
-        <br>
-        <input type="button" value="0" onclick="agregarALaPantalla('0')">
-        <input type="button" value="." onclick="agregarALaPantalla('.')">
-        <input type="button" value="/" onclick="agregarALaPantalla('/')">
-        <input type="button" value="=" onclick="calcular()">
-        <br>
-        <input type="button" value="C" onclick="limpiarPantalla()">
+      <h5 class="titulo">CASIO</h5>
+      <input type="text" id="pantalla" readonly placeholder="Hello World!" />
+      <br />
+      <div class="contenedorTeclas">
+        <div class="flexChildren">
+          <input type="button" value="7" onclick="agregar('7')" />
+          <input type="button" value="8" onclick="agregar('8')" />
+          <input type="button" value="9" onclick="agregar('9')" />
+          <input type="button" value="%" onclick="agregar('%')" />
+        </div>
+        <br />
+        <div class="flexChildren">
+          <input type="button" value="4" onclick="agregar('4')" />
+          <input type="button" value="5" onclick="agregar('5')" />
+          <input type="button" value="6" onclick="agregar('6')" />
+          <input type="button" value="/" onclick="agregar('/')" />
+        </div>
+        <br />
+        <div class="flexChildren">
+          <input type="button" value="1" onclick="agregar('1')" />
+          <input type="button" value="2" onclick="agregar('2')" />
+          <input type="button" value="3" onclick="agregar('3')" />
+          <input type="button" value="*" onclick="agregar('*')" />
+        </div>
+        <br />
+        <div class="flexChildren">
+          <input type="button" class="borrar" value="Del" onclick="del()" />
+          <input type="button" value="0" onclick="agregar('0')" />
+          <input type="button" value="00" onclick="agregar('00')" />
+          <input type="button" value="-" onclick="agregar('-')" />
+        </div>
+        <br />
+        <div class="flexChildren">
+          <input type="button" value="C" onclick="borrar()" />
+          <input type="button" value="," onclick="agregar('.')" />
+          <input type="button" value="=" onclick="calcular()" />
+          <input type="button" value="+" onclick="agregar('+')" />
+        </div>
+        <br />
+      </div>
     </div>
 
-    <script src="script.js"></script>
-</body>
-
+    <script src="index.js"></script>
+  </body>
 </html>
